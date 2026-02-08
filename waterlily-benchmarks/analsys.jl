@@ -53,6 +53,19 @@ times_energies_plot = heatmap(
 
 savefig(times_energies_plot, "times_energies.png")
 
+times_over_energies_plot = heatmap(
+    frequencies_t, powers_t, reshape(times ./ energies, length(powers_t), length(frequencies_t));
+    title="WaterLily.jl on Nvidia A100",
+    xlabel="GPU frequency (MHz)",
+    xticks=frequencies_t,
+    ylabel="Power cap (W)",
+    yticks=powers_t,
+    colorbar_title="Time / energy usage (s/(W⋅h))",
+    size=(1000, 1000),
+)
+
+savefig(times_over_energies_plot, "times_over_energies.png")
+
 energy_fractions_plot = heatmap(
     frequencies_t, powers_t, reshape(energy_fractions, length(powers_t), length(frequencies_t));
     title="WaterLily.jl on Nvidia A100",
