@@ -12,6 +12,7 @@ times = [JSON.parsefile("$(dir)/benchmarks/cricket.rc.ucl.ac.uk_2d41ba1/sphere_6
 
 total_times = [JSON.parsefile("$(dir)/benchmarks/cricket.rc.ucl.ac.uk_2d41ba1/energy-time.json")["total_time"] for dir in directories]
 energies = [JSON.parsefile("$(dir)/benchmarks/cricket.rc.ucl.ac.uk_2d41ba1/energy-time.json")["energy"] for dir in directories]
+energy_fractions = energies ./ (powers ./ (3600 ./ total_times)) .* 100
 
 times_plot = heatmap(
     frequencies_t, powers_t, reshape(times, length(powers_t), length(frequencies_t));
@@ -53,7 +54,7 @@ times_energies_plot = heatmap(
 savefig(times_energies_plot, "times_energies.png")
 
 energy_fractions_plot = heatmap(
-    frequencies_t, powers_t, reshape(energies ./ (powers ./ (3600 ./ total_times)) .* 100, length(powers_t), length(frequencies_t));
+    frequencies_t, powers_t, reshape(energy_fractions, length(powers_t), length(frequencies_t));
     title="WaterLily.jl on Nvidia A100",
     xlabel="GPU frequency (MHz)",
     xticks=frequencies_t,
