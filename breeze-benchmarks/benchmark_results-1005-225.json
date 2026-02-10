@@ -1,0 +1,30 @@
+[
+  {
+    "name": "CBL_1152x1152x512_F32_WENO5_nothing_nothing",
+    "float_type": "Float32",
+    "grid_size": [
+      1152,
+      1152,
+      512
+    ],
+    "time_steps": 20,
+    "Δt": 0.5,
+    "total_time_seconds": 52.720512313,
+    "time_per_step_seconds": 2.63602561565,
+    "steps_per_second": 0.3793589842462197,
+    "grid_points_per_second": 2.5776579861969674e8,
+    "gpu_memory_used": 78353897156,
+    "metadata": {
+      "julia_version": "1.12.4",
+      "oceananigans_version": "0.104.4",
+      "breeze_version": "0.3.1",
+      "architecture": "GPU{CUDA.CUDAKernels.CUDABackend}",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_version": "13.0.0",
+      "cpu_model": "Neoverse-N1 (neoverse-n1)",
+      "num_threads": 1,
+      "hostname": "cricket.rc.ucl.ac.uk",
+      "timestamp": "2026-02-10T11:05:55.401"
+    }
+  }
+]
