@@ -1,4 +1,8 @@
 [submodule "pi-solver-benchmarks/pi_examples"]
 	path = pi-solver-benchmarks/pi_examples
-	url = https://github.com/giordano/pi_examples
+	url = https://github.com/giordano/pi_examples.git
 	branch = mg/gpu-benchmarks
+[submodule "waterlily-benchmarks/WaterLily-Benchmarks"]
+	path = waterlily-benchmarks/WaterLily-Benchmarks
+	url = https://github.com/giordano/WaterLily-Benchmarks.git
+	branch = mg/energy-benchmarks
