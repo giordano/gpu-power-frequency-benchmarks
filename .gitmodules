@@ -1,0 +1,4 @@
+[submodule "pi-solver-benchmarks/pi_examples"]
+	path = pi-solver-benchmarks/pi_examples
+	url = https://github.com/giordano/pi_examples
+	branch = mg/gpu-benchmarks
