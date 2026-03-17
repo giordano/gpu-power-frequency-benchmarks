@@ -6,3 +6,7 @@
 	path = waterlily-benchmarks/WaterLily-Benchmarks
 	url = https://github.com/giordano/WaterLily-Benchmarks.git
 	branch = mg/energy-benchmarks
+[submodule "babelstream-benchmarks/BabelStream"]
+	path = babelstream-benchmarks/BabelStream
+	url = https://github.com/giordano/BabelStream.git
+	branch = mg/gpu-power-benchmarks
