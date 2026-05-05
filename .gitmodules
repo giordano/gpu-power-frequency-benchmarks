@@ -10,3 +10,7 @@
 	path = babelstream-benchmarks/BabelStream
 	url = https://github.com/giordano/BabelStream.git
 	branch = mg/gpu-power-benchmarks
+[submodule "breeze-benchmarks/Breeze.jl"]
+	path = breeze-benchmarks/Breeze.jl
+	url = https://github.com/giordano/Breeze.jl.git
+	branch = mg/energy-benchmarking
